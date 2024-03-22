@@ -1,7 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 
 #Fontes utilizadas
-
 #Fonte Nome
 fonte_nome = ImageFont.truetype('Fontes/Yu-Gi-Oh! Matrix Regular Small Caps 1.ttf',46)
 #Fonte Titulo Efeito
@@ -15,13 +14,13 @@ carta = Image.open('./Cartas/Normal.png')
 desenhar = ImageDraw.Draw(carta)
 
 #Inserindo Nome da Carta
-desenhar.text((30,28),"Xicra Linda",fill='black',font=fonte_nome)
+desenhar.text((30,28),"Nome de Carta Generico",fill='black',font=fonte_nome)
 
 #Inserindo Nome do Efeito/Titulo da Carta
-desenhar.text((30,460),"[Esposa mais besta do Mundo]",fill='black',font=fonte_sub)
+desenhar.text((30,460),"[Titulo de Efeito Generico]",fill='black',font=fonte_sub)
 
 #Inserindo Descrição do efeito da carta em uma variavél separada e criando 2 strings vazias
-desc = 'Caso esta carta seja invocada e a carta "Raioni Bobo" esteja em campo de batalha, esta carta perde -300 de atk por estar besta e "Raioni Bobo" ganha +1500 de atk por estar de pinto duro'
+desc = 'Um texto que descreve a lore ou efeitos especiais de uma carta de monstro generico ou especial'
 t1 = ""
 t2 = ""
 
